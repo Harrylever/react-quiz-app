@@ -107,7 +107,7 @@ const App = () => {
           <p>
             Check out the code <img src={github_logo} alt="" />
           </p>
-          <a href="https://">GitHub: React Quiz App</a>
+          <a href="https://github.com/Harrylever/react-quiz-app">GitHub: React Quiz App</a>
         </div>
       </NavWrapper>
       <Wrapper>
