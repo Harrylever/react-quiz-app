@@ -14,6 +14,7 @@ import profileImg from './images/Harrylever.jpg'
 import reactLogo from './images/react_log.png';
 import triviaLogo from './images/trivia_logo.png';
 import github_logo from './images/github_logo.png';
+import tsLogo from './images/ts_logo.png';
 
 // Import FetchQuiz Question
 import { fetchQuizQuestions } from "./API";
@@ -103,7 +104,9 @@ const App = () => {
           <h1>REACT QUIZ</h1>
         </div>
         <div className="nav_cont_2">
-          <p>Check out the code  <img src={github_logo} alt="" /></p>
+          <p>
+            Check out the code <img src={github_logo} alt="" />
+          </p>
           <a href="https://">GitHub: React Quiz App</a>
         </div>
       </NavWrapper>
@@ -198,12 +201,20 @@ const App = () => {
                       <img src={reactLogo} alt="" />
                     </div>
                   </div>
+                </a>{" "}
+                <a href="https://reactjs.org/">
+                  <div>
+                    <p>Typescript</p>
+                    <div>
+                      <img src={tsLogo} alt="" />
+                    </div>
+                  </div>
                 </a>
                 <a href="https://opentdb.com/api_config.php">
                   <div>
                     <p>Open Trivia Database API</p>
                     <div>
-                      <img src={triviaLogo} alt="" />
+                      <img style={{ marginTop: "10px" }} src={triviaLogo} alt="" />
                     </div>
                   </div>
                 </a>

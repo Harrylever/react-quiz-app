@@ -34,7 +34,7 @@ export const NavWrapper = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
-  
+
   > .nav_cont_1 {
     max-width: 1200px;
     width: 60%;
@@ -77,7 +77,7 @@ export const NavWrapper = styled.nav`
     p {
       display: flex;
       align-items: center;
-      font-size: .8rem;
+      font-size: 0.8rem;
 
       img {
         width: 20%;
@@ -89,16 +89,16 @@ export const NavWrapper = styled.nav`
       text-decoration: underline;
       color: #000;
       font-weight: 600;
-      font-size: .7rem;
+      font-size: 0.7rem;
     }
 
     @media (max-width: 768px) {
       p {
-        font-size: .6rem;
+        font-size: 0.6rem;
       }
 
       a {
-        font-size: .56rem;
+        font-size: 0.56rem;
       }
     }
   }
@@ -214,11 +214,11 @@ export const ExtraContent = styled.div`
       > p {
         position: absolute;
         bottom: -14%;
-        opacity: .7;
+        opacity: 0.7;
         left: 9%;
         font-style: italic;
         font-size: 12px;
-        color: #AB6800;
+        color: #ab6800;
         font-weight: 700;
       }
     }
@@ -249,35 +249,43 @@ export const ExtraContent = styled.div`
       font-size: 17px;
       width: 70%;
       opacity: 0.6;
-      border: 2px solid black;
+      /* border: 1px solid black; */
 
       &:hover {
-        opacity: .84;
-      }
-    }
-
-    div {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      margin-bottom: 7px;
-
-      > div {
-        max-width: 60px;
-        min-width: 60px;
-        width: 100%;
-        max-height: 60px;
-        min-height: 60px;
-        height: 100%;
-
-        img {
-          width: 100%;
-        }
+        opacity: 0.84;
       }
 
       @media (max-width: 768px) {
         margin: 0 auto;
+      }
+
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 7px;
+        > p {
+          width: 70%;
+        }
+        > div {
+          max-width: 60px;
+          min-width: 60px;
+          width: 60%;
+          max-height: 60px;
+          min-height: 60px;
+          height: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        @media (max-width: 768px) {
+          > p {
+            text-align: left;
+          }
+        }
       }
     }
   }
